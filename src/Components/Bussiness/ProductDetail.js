@@ -9,7 +9,7 @@ import StyledLabel from '../Basic/StyledLabel'
 function ProductDetail(props){
 
     const {data} = props
-    const {title,id,price,discount,unitMoney,size,qty,isSelected} = (data!==undefined ? data:null)
+    const {title,id,price,discount,unitMoney,size,qty,shippingCost,shippingDays} = (data!==undefined ? data:null)
 
     return (
         <Grid container spacing={1} direction={"row"}>
@@ -29,6 +29,14 @@ function ProductDetail(props){
                 <Grid item xs={12} md={12}>
                 <StyledLabel expired>{unitMoney}{price}</StyledLabel>
                 </Grid>
+            </Grid>
+
+            <Grid item xs={12} md={12}>
+            <StyledLabel>Shipping cost: {unitMoney}{shippingCost} , in {shippingDays} business days </StyledLabel>
+            </Grid>
+
+            <Grid item xs={12} md={12}>
+            <StyledLabel>Size Guide </StyledLabel>
             </Grid>
 
             <Grid item xs={12} md={12}>
