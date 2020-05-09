@@ -5,18 +5,20 @@ import {makeStyles} from '@material-ui/core/styles'
 import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
 import ProductDetail from './ProductDetail'
 import StyledButton from '../Basic/StyledButton'
-  
+import StyledLabel from '../Basic/StyledLabel'
+import IconButton from '@material-ui/core/IconButton'
+
 function ProductFooter(props){
 
     return (
         <Grid container spacing={1} direction={"column"}>
 
             <Grid container spacing={1} direction="row">
-                <Grid item xs={6} md={6}>
+                <Grid item xs={12} md={6}>
                         <StyledButton color="notred" >ADD TO CART</StyledButton>
                 </Grid>
-                <Grid item xs={6} md={6}>
-                    <FavoriteBorderOutlinedIcon/>
+                <Grid item xs={12} md={6}>
+                    <IconButton><FavoriteBorderOutlinedIcon/></IconButton>
                 </Grid>
             </Grid>
 
@@ -28,7 +30,7 @@ function ProductFooter(props){
 
             <Grid container spacing={1} direction="row">
                 <Grid item xs={12} md={12} >
-                    VIEW PRODUCT DETAILS
+                    <StyledLabel variant={"button"}>VIEW PRODUCT DETAILS</StyledLabel>
                 </Grid>
             </Grid>
 

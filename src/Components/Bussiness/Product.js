@@ -42,6 +42,11 @@ function Product(props){
                     <Grid item xs={12} md={12}  >
                         <ProductDetails data={data}/>
                     </Grid>
+                    
+                    <br />
+                    <br />
+                    <br />
+
                     <Grid item xs={12} md={12}  >
                         <ProductFooter />
                     </Grid>
