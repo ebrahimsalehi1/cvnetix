@@ -12,4 +12,4 @@ I have been responsed by these steps:
 6- write some codes to test your components and UI with Enzyme.<br/>
 
 This is a picture of implementation project <br/>
-<img arc="popup-slider-challenge.png" /> 
+<img src="popup-slider-challenge.png" /> 
