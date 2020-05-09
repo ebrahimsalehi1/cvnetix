@@ -27,18 +27,29 @@ function Product(props){
     const {data} = props
     const classes = useStyles();
 
+    if(data===undefined)
+       return
+
     return (
-        <div className={classes.root}>
-        <GridList cellHeight={500} className={classes.gridList} cols={3}>
-            <GridListTile cols={1}>
-                <ProductImages id={data.id} />
-            </GridListTile>
-            <GridListTile cols={1} rows={2}>
-                <ProductDetails data={data}/>
-                <ProductFooter />
-            </GridListTile>
-        </GridList>
-        </div>
+        <Grid container direction="row" spacing={1}>
+
+            <Grid item xs={12} md={6}  >
+                <ProductImages numOfItems={5} id={data.id} />
+            </Grid>
+
+            <Grid item xs={12} md={6}>
+                <Grid container spacing={1} direction={"column"}>
+                    <Grid item xs={12} md={12}  >
+                        <ProductDetails data={data}/>
+                    </Grid>
+                    <Grid item xs={12} md={12}  >
+                        <ProductFooter />
+                    </Grid>
+                </Grid>
+            </Grid>
+
+        </Grid>    
+
     )
 }
 
