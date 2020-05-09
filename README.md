@@ -16,4 +16,4 @@ This is a picture of demo project that I have been responsed for
 <img src="popup-slider-challenge.png" style="" /> 
 
 <hr/>
-<strong>Thank you to give an opportunity to do this project</strong>
+<strong>Thank you to give me this opportunity to do this project</strong>
