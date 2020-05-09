@@ -11,5 +11,9 @@ I have been responsed by these steps:
 5- I must use CSS-In-Js that means write all the css as javascript functions and objects<br/>
 6- write some codes to test your components and UI with Enzyme.<br/>
 
-This is a picture of implementation project <br/>
-<img src="popup-slider-challenge.png" /> 
+This is a picture of demo project that I have been responsed for 
+<br/><br/>
+<img src="popup-slider-challenge.png" style="" /> 
+
+<hr/>
+<strong>Thank you to give an opportunity to do this project</strong>

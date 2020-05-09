@@ -7,7 +7,7 @@ const useStyles = makeStyles({
         width: '100%',
         maxWidth: 500,
         textDecoration:props=> props.expired ? 'line-through':'none',
-        color: props=> props.expired ? 'gray':'black',
+        color: props=> props.expired ? 'gray':(props.color ? props.color:'black'),
       },
 })
 
