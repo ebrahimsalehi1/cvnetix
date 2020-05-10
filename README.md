@@ -13,7 +13,13 @@ I have been responsed by these steps:
 
 This is a picture of demo project that I have been responsed for 
 <br/><br/>
-<img src="popup-slider-challenge.png" style="" /> 
-
+<img src="popup-slider-challenge.png" style="width:400px;height:300px" /> 
+<hr/>
+Here I made some folders and as you can depict the project structure <br/>
+---__tests__     --> All tests with Chai & Enzyme<br/>
+---Components    --> All components are in this folder<br/>
+------Basic      --> Include All Buttons,Images,Labels, ...<br/>
+------Business   --> Include business components or react component architecture base on web page elements<br/>
+---sampledata    --> include json file as sample data to test<br/>
 <hr/>
 <strong>Thank you to give me this opportunity to do this project</strong>

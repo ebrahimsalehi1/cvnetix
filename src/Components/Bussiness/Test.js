@@ -3,7 +3,7 @@ import {makeStyles} from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
-import Paths from '../src/config'
+import Paths from '../../config'
 
 const useStyles = makeStyles({
     images:{
@@ -44,26 +44,28 @@ function MyComp(props){
     function myImageList()
     {
         const arr = [];
-        const path = "./img/117699813"
+        const path = "${Paths.images.url}/117699813"
         for(let i=1;i<=5;i++){            
             arr.push(require(path+"-"+i+".jpg"))
         }
         return arr;
     }
 
-    const data = myImageList()
-    const idPath = require("./img/117699813.jpg")
+    const data = undefined
+    const idPath = undefined
+    //const data = myImageList()
+    //const idPath = require("${Paths.images.url}/117699813.jpg")
     return (
 
         <Grid container direction="row" spacing={1} alignItems="center" >
 
             <Grid item xs={6} md={1}  >
                 <Grid container spacing={1} direction="column" xs="auto">
-                    {data.map(item=><Grid item xs key={item}><img className={classes.images} src={item}/></Grid>)}
+                    {data!==undefined && data.map(item=><Grid item xs key={item}><img className={classes.images} src={item}/></Grid>)}
                 </Grid>
             </Grid>
 
-            <Grid item xs={6} md={5}><img className={classes.bigImages} src={idPath}/></Grid>
+            <Grid item xs={6} md={5}>{idPath!==undefined && <img className={classes.bigImages} src={idPath}/>}</Grid>
 
             <Grid item xs={12} md={6}>
                 <Comp1 />
@@ -75,10 +77,10 @@ function MyComp(props){
 }
 
 function Test(props){
-    const p = require(`${Paths.images.url}/117699813.jpg`)
+    //const p = require(`${Paths.images.url}/117699813.jpg`)
     return (       
-        // <MyComp numOfItems={5}/>
-        <img src={p} />
+        <MyComp numOfItems={5}/>
+       // <img src={p} />
     )
 }
 

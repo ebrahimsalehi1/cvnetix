@@ -1,6 +1,6 @@
 import React from 'react'
 import Product from './Components/Bussiness/Product.js'
-import Test from './Test'
+import Test from './Components/Bussiness/Test'
 import jsonData from './sampledata/data.json'
 
 const data = jsonData[0]
