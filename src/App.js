@@ -8,8 +8,8 @@ const data = jsonData[0]
 function App(){
     return (
         <>
-            <Product data={data}/>
-            {/* <Test /> */}
+            {/* <Product data={data}/> */}
+            <Test />
         </>
     )
 }

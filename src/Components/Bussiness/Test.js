@@ -76,11 +76,26 @@ function MyComp(props){
     )
 }
 
+function Test2(props){
+    return (
+    <div className="ebrahim" data-testid="ebrahim">
+        <div className="foo qoo" style={{"backgroundColor":"red"}}  >
+              <input type='TEXT' />
+              <input type='TEXT' />
+              <button>ok</button>
+        </div>
+        <div className="foo boo" />
+        <div className="foo hoo" />
+    </div>
+    )
+}
+
 function Test(props){
     //const p = require(`${Paths.images.url}/117699813.jpg`)
     return (       
-        <MyComp numOfItems={5}/>
+        // <MyComp numOfItems={5}/>
        // <img src={p} />
+       <Test2 />
     )
 }
 
